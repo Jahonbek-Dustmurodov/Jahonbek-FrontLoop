@@ -1,0 +1,248 @@
+@font-face {
+  font-display: swap; 
+  font-family: "Roboto Condensed";
+  font-weight: 600;
+  src: url("./fonts/roboto-condensed-v27-latin-600.woff2") format("woff2"), 
+  url("./fonts/roboto-condensed-v27-latin-600.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("./fonts/roboto-v30-latin-regular.woff2") format("woff2"), 
+  url("./fonts/roboto-v30-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: "Roboto";
+  font-weight: 500;
+  src: url("./fonts/roboto-v30-latin-500.woff2") format("woff2"),
+  url("./fonts/roboto-v30-latin-500.woff") format("woff");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", "Roboto", sans-serif;
+  background-color: #cfdde8;
+}
+
+.hero__wrapper {
+  max-width: 400px;
+  min-height: 513px;
+  margin: 143px auto 0 auto;
+  background-color: #fff;
+  border-radius: 14px;
+}
+
+.hero__title {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 18px;
+  padding-right: 24px;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  align-items: center;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  background-color: #6a96d8;
+  border-radius: 14px 14px 0 0;
+}
+
+.hero__title::before {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 10px;
+  content: "";
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.hero__title::after {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 126px;
+  content: "";
+  cursor: pointer;
+  background-image: url("./images/component.svg");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+}
+
+.hero__chat-wrapper {
+  padding: 24px 24px 20px;
+}
+
+.hero__day {
+  display: flex;
+  margin-bottom: 24px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.025em;
+  color: #ddd;
+}
+
+.hero__day::before {
+  display: inline-block;
+  width: 145px;
+  height: 1px;
+  margin-right: 10px;
+  content: "";
+  background-color: #ddd;
+}
+
+.hero__day::after {
+  display: inline-block;
+  width: 145px;
+  height: 1px;
+  margin-left: 10px;
+  content: "";
+  background-color: #ddd;
+}
+
+.hero__sms-time {
+  display: inline-block;
+  margin-bottom: 6px;
+  margin-left: 6px;
+  color: #ddd;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.hero__sms-wrapper {
+  position: relative;
+  width: 269px;
+  height: 56px;
+  margin-bottom: 16px;
+  margin-left: 6px;
+  padding: 9px 63px 11px 9px;
+  background-color: #e6edf6;
+}
+
+.hero__sms-wrapper::before {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-top-color: #e6edf6;
+  border-right-color: #e6edf6;
+  border-bottom-color: transparent;
+  border-left-color: transparent; 
+  content: "";
+}
+
+.hero__sms {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+}
+
+.hero__chat-time {
+  display: inline-block;
+  margin-bottom: 6px;
+  margin-left: 316px;
+  color: #ddd;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.hero__message-wrapper {
+  display: block;
+  position: relative;
+  width: 269px;
+  height: 56px;
+  margin-right: 6px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  padding: 9px 11px 11px 10px;
+  background-color: #e6edf6;
+}
+
+.hero__message-wrapper::after {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-top-color: #e6edf6;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #e6edf6; 
+  content: "";
+}
+
+.hero__news-wrapper {
+  position: relative;
+  width: 83px;
+  height: 36px;
+  margin-bottom: 16px;
+  margin-left: 6px;
+  padding: 9px 10px 11px 9px;
+  background-color: #e6edf6;
+}
+
+.hero__report-wrapper {
+  display: block;
+  position: relative;
+  width: 195px;
+  height: 38px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  padding: 9px 10px 11px 10px;
+  background-color: #ffc2c1;
+}
+
+.hero__form {
+  position: relative;
+}
+
+.hero__input {
+  width: 352px;
+  height: 45px;
+  padding-left: 20px;
+  color: #bdbdbd;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  border: 1px solid #ddd;
+  border-radius: 54px;
+}
+
+.hero__button {
+  position: absolute;
+  width: 87px;
+  height: 37px;
+  top: 4px;
+  right: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  border: none;
+  border-radius: 100px;
+  background-color: #6a96d8;
+}
+
